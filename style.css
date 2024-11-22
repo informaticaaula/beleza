@@ -1,0 +1,136 @@
+/* Importação de fonte */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    background-color: #6a2437;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0px 0px 20px 20px;
+    margin: 0 20px 0 20px;
+    text-shadow: 2px 2px 2px #3f3f3f;
+    box-shadow: 0.5px 0.5px 6px #8e8e8e;
+
+
+}
+nav a {
+    color: #ffffff; 
+    margin: 0 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.6em;
+
+}
+nav a:hover {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #f3a2c4;
+    color: #ffffff; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: x-large;
+    border-radius: 0px 0px 20px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+/* Seções */
+main {
+    padding: 20px;
+}
+
+.secao {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.secao img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.secao div {
+    padding: 20px;
+    flex: 1;
+    color: #fff;
+}
+
+/* Cores de fundo específicas */
+#historia { background-color: #922f4a; }
+#beleza { background-color: #7a314c; }
+#tipos { background-color: #5a3a4e; }
+#maquiagem { background-color: #3c4b58; }
+#tendencias { background-color: #2e5863; }
+#cuidados { background-color: #22696d; }
+
+.secao h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.secao p, br {
+    font-size: 1.5em;
+    text-align: justify;
+    text-indent: 45px;
+
+}
+
+section:hover{
+    background-color: #fafafa;
+    font-size: large;
+    border-bottom: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0.5px 0.5px 6px #8e8e8e;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1em;
+    color: #fff;
+    box-shadow: 0.5px 0.5px 6px #8e8e8e;
+    text-shadow: 1px 1px 1px #8e8e8e;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .secao {
+        flex-direction: column;
+    }
+
+    .secao img {
+        max-width: 100%;
+    }
+}
